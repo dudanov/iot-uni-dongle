@@ -4,7 +4,8 @@ An project of universal stick for various IOT appliances controlled via UART.
 
 ![1](images/main.png)
 
-Main goals
+## Main goals
+
 1. Unified design for all types of home devices from different manufacturers.
 2. Use of various connectors with a pitch of 2.54 mm and USB.
 3. Possibility of swapping the middle signal TX/RX contacts.
