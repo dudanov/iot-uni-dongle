@@ -52,7 +52,7 @@ That is, the received order will look like this:
 
 ![1](images/smt.png) ![2](images/smt_after.png)
 
-You just have to solder the module and the required connector on the back of the board.
+You just have to solder the module and the required connector on the back of the board and select the position of the signal contacts depending on your device.
 
 ## Frequently asked Questions:
 > How can I tell if my air conditioner is supported or not?
