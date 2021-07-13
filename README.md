@@ -21,11 +21,13 @@ A far from complete list of supported brands:
 6. [Comfee](http://www.comfee-russia.ru/)
 7. [Inventor](https://www.inventorairconditioner.com/)
 
-## Sockets examples
+## Some sockets mounting examples
 
 ![1](images/sockets.png)
 
 ## Signal lines TX/RX
+
+To select the location of the signal contacts, it is necessary to close the jumper platforms with drops of solder (in the photos is marked in red). Signal lines are named according to the master, that is, ESP12-F.
 
 ![1](images/midea.png) ![2](images/haier.png)
 
