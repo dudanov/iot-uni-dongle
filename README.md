@@ -11,7 +11,7 @@ An project of universal stick for various IOT appliances controlled via UART.
 3. Possibility of swapping the middle signal TX/RX contacts.
 4. IR transmission and receiving via one wire connected to TSOP output.
 5. Minimalistic design: 30.5x19mm (PCB size: 23.5x19mm).
-6. Using popular Wi-Fi module ESP12-F based on ESP8266 SoC.
+6. Using popular Wi-Fi module [ESP12-F](https://docs.ai-thinker.com/_media/esp8266/docs/esp-12f_product_specification_en.pdf) based on ESP8266 SoC.
 
 A far from complete list of supported brands:
 1. [Midea](https://www.midea.com/)
