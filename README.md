@@ -5,11 +5,12 @@ An project of universal stick for various IOT appliances controlled via UART.
 ![1](images/main.png)
 
 Main goals
-1. Unified design for all types of home devices from different manufacturers
-2. Use of various connectors with a pitch of 2.54 mm and of course USB
-3. Possibility of swapping the middle signal TX/RX contacts
-4. Minimalistic design: 30.5x19mm (PCB size: 23.5x19mm)
-5. Using cheap WiFi module ESP12F based on ESP8266 chip
+1. Unified design for all types of home devices from different manufacturers.
+2. Use of various connectors with a pitch of 2.54 mm and of course USB.
+3. Possibility of swapping the middle signal TX/RX contacts.
+4. IR transmission and receiving.
+5. Minimalistic design: 30.5x19mm (PCB size: 23.5x19mm).
+6. Using cheap WiFi module ESP12F based on ESP8266 SoC.
 
 A far from complete list of supported brands:
 1. [Midea](https://www.midea.com/)
@@ -20,7 +21,12 @@ A far from complete list of supported brands:
 6. [Comfee](http://www.comfee-russia.ru/)
 7. [Inventor](https://www.inventorairconditioner.com/)
 
+## Sockets
+
+![1](images/sockets.png)
+
 ## Signal lines TX/RX
+
 
 
 
