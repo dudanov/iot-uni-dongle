@@ -6,9 +6,9 @@ An project of universal stick for various IOT appliances controlled via UART.
 
 Main goals
 1. Unified design for all types of home devices from different manufacturers.
-2. Use of various connectors with a pitch of 2.54 mm and of course USB.
+2. Use of various connectors with a pitch of 2.54 mm and USB.
 3. Possibility of swapping the middle signal TX/RX contacts.
-4. IR transmission and receiving.
+4. IR transmission and receiving via one wire connected to TSOP output.
 5. Minimalistic design: 30.5x19mm (PCB size: 23.5x19mm).
 6. Using cheap WiFi module ESP12F based on ESP8266 SoC.
 
@@ -41,6 +41,11 @@ The pictures below show an example for a `TSOP1738` IR receiver.
 ![2](images/tsop_display.jpg)
 
 You can also read the IR signal on the `GPIO12` pin from all remote controls, including third party ones. It can help in researching protocols and various automation goals without resorting to additional devices, thus saving energy.
+
+## SMT assembly on JLCPCB
+
+The [single-smt](jlcpcb/single-smt) directory contains the files necessary for manufacturing and assembling the board at the [JLCPCB](https://jlcpcb.com) factory.
+After manufacturing, you just have to solder the module and the required connector.
 
 ## Frequently asked Questions:
 > How can I tell if my air conditioner is supported or not?
