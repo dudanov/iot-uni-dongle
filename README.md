@@ -49,7 +49,7 @@ The [single-smt](jlcpcb/single-smt) directory contains the files necessary for m
 
 That is, the received order will look like this:
 
-![2](images/smt.png)
+![1](images/smt.png) ![2](images/smt_after.png)
 
 You just have to solder the module and the required connector on the back of the board.
 
@@ -66,6 +66,5 @@ You just have to solder the module and the required connector on the back of the
 
 *Yes, you can write me to my [Telegram](https://t.me/dudanov) or [e-mail](mailto:sergey.dudanov@gmail.com).*
 
-![2](images/sticks.jpg)
 
 If this project was useful to you, you can [buy me](https://paypal.me/dudan0v) a Cup of coffee :)
