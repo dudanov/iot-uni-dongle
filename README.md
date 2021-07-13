@@ -10,7 +10,7 @@ Main goals
 3. Possibility of swapping the middle signal TX/RX contacts.
 4. IR transmission and receiving via one wire connected to TSOP output.
 5. Minimalistic design: 30.5x19mm (PCB size: 23.5x19mm).
-6. Using cheap WiFi module ESP12F based on ESP8266 SoC.
+6. Using popular Wi-Fi module ESP12-F based on ESP8266 SoC.
 
 A far from complete list of supported brands:
 1. [Midea](https://www.midea.com/)
@@ -21,14 +21,13 @@ A far from complete list of supported brands:
 6. [Comfee](http://www.comfee-russia.ru/)
 7. [Inventor](https://www.inventorairconditioner.com/)
 
-## Sockets
+## Sockets examples
 
 ![1](images/sockets.png)
 
 ## Signal lines TX/RX
 
-
-
+![1](images/midea.png) ![2](images/haier.png)
 
 ## Sending and receiving IR remote control commands
 
