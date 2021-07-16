@@ -38,14 +38,15 @@ wifi:
   # comment next line after first successful update
   use_address: iot-uni-dongle.local
   ap:
-    ssid: "iot-uni-dongle"
-    password: "12345678"
+    ssid: "fallbackSSID"
+    password: "fallbackPASSWORD"
+
 captive_portal:
 
 ota:
 ```
 
-Thus, you do not need to resort to using the programmer. The migration is complete and you are completely independent of my initial configuration!
+Thus, you do not need to resort to using the programmer. Congratulations! The migration is complete and you are completely independent of my initial configuration!
 
 ## Using the programmer (universal method)
 
