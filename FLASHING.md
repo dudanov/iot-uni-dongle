@@ -20,7 +20,7 @@ captive_portal:
 ota:
 ```
 
-This means that when the stick is turned on, it works in the access point mode with the network name `iot-uni-dongle` and a simple password `12345678`.
+This means that when the stick is powered on, it will works in the access point mode with the network name `iot-uni-dongle` and a simple password `12345678`.
 
 By connecting to this network from your smartphone, you can go to the [captive portal](https://esphome.io/components/captive_portal.html) and enter the parameters of your home Wi-Fi network. I needed to reboot the stick in order for it to connect to my network.
 
