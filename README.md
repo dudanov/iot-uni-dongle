@@ -2,7 +2,7 @@
 
 An project of universal stick for various IOT appliances controlled via UART.
 
-![1](images/main.png)
+![1](images/main.gif)
 
 ## Main goals
 
