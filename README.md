@@ -21,6 +21,7 @@ A far from complete list of supported brands:
 5. [Carrier](https://www.carrier.com/)
 6. [Comfee](http://www.comfee-russia.ru/)
 7. [Inventor](https://www.inventorairconditioner.com/)
+8. [Dimstal/Simando](https://www.simando24.de/)
 
 ## Some sockets mounting examples
 
