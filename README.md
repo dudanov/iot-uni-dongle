@@ -2,6 +2,8 @@
 
 An project of universal stick for various IOT appliances controlled via UART.
 
+Ready-made are available in [Tindie Shop](https://www.tindie.com/products/dudanov/universal-iot-dongle/).
+
 ![1](images/main.gif)
 
 ## Main goals
@@ -12,6 +14,8 @@ An project of universal stick for various IOT appliances controlled via UART.
 4. IR transmission and receiving via one wire connected to TSOP output.
 5. Minimalistic design: 30.5x19mm (PCB size: 23.5x19mm).
 6. Using popular Wi-Fi module [ESP12-F](https://docs.ai-thinker.com/_media/esp8266/docs/esp-12f_product_specification_en.pdf) based on ESP8266 SoC.
+
+![1](images/view01.jpg) ![1](images/view02.jpg)
 
 A far from complete list of supported brands:
 1. [Midea](https://www.midea.com/)
@@ -25,7 +29,7 @@ A far from complete list of supported brands:
 
 ## Some sockets mounting examples
 
-![1](images/sockets.png)
+![1](images/sockets01.jpg) ![1](images/sockets02.jpg)
 
 ## Signal lines TX/RX
 
@@ -70,7 +74,7 @@ I've written some [tutorial](FLASHING.md). Read it.
 
 > Is it possible to purchase a ready-made stick?
 
-*Yes, you can write me to my [Telegram](https://t.me/dudanov) or [e-mail](mailto:sergey.dudanov@gmail.com).*
+*Yes, you can buy it in [Tindie Shop](https://www.tindie.com/products/dudanov/universal-iot-dongle/), write me to my [Telegram](https://t.me/dudanov) or [e-mail](mailto:sergey.dudanov@gmail.com).*
 
 
 If this project was useful to you, you can [buy me](https://paypal.me/dudan0v) a Cup of coffee :)
