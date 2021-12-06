@@ -40,7 +40,7 @@ To select the location of the signal contacts, it is necessary to close the jump
 ## Sending and receiving IR remote control commands
 
 Due to the fact that not all capabilities are implemented in the UART protocol (for example, indication control and `FollowMe` feature), it is possible to sending IR commands by supplying a demodulated signal (duty: 100%) to pin `GPIO13`.
-To do this, connect the `IR_TSOP` pad located on the top side of the stick and the output of the TSOP IR demodulator on the display board.
+To do this, connect the `IR-` pad located on the top side of the stick and the output of the TSOP IR demodulator on the display board.
 The pictures below show an example for a `TSOP1738` IR receiver.
 
 ![2](images/tsop_stick.jpg)
