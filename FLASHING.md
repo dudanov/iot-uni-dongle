@@ -47,6 +47,7 @@ ota:
 ```
 
 Thus, you do not need to resort to using the programmer. Congratulations! The migration is complete and you are completely independent of my initial configuration!
+[Here](midea-esphome-example.yaml) you can view example YAML config for Midea-like ACs.
 
 ## Using the programmer (universal method)
 
