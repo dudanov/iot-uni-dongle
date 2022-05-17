@@ -1,0 +1,33 @@
+# Default iot-uni-dongle config
+esphome:
+  name: iot-uni-dongle
+  platformio_options:
+    upload_speed: 2000000
+
+# Board config
+esp8266:
+  board: esp12e
+
+# Disable logging via UART
+logger:
+  baud_rate: 0
+
+# UART config
+uart:
+  tx_pin: 1
+  rx_pin: 3
+  baud_rate: 9600
+
+# Enable Home Assistant API
+api:
+
+# Enable OTA
+ota:
+
+# Enable WiFi default access point
+wifi:
+  ap:
+    password: "12345678"
+
+# Enable captive portal
+captive_portal:
