@@ -1,0 +1,13 @@
+# Sensor from HASS for setting up FollowMe temperature
+sensor:
+  - platform: homeassistant
+    entity_id: ${follow_me_sensor}
+    id: follow_me_sensor
+    filters:
+      - throttle: 10s
+      - heartbeat: 2min
+      - debounce: 1s
+    on_value:
+      midea_ac.follow_me:
+        temperature: !lambda "return x;"
+        beeper: false

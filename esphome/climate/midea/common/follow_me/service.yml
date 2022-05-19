@@ -1,0 +1,10 @@
+# Service for setting up FollowMe temperature
+api:
+  services:
+    - service: follow_me
+      variables:
+        temperature: float
+      then:
+        midea_ac.follow_me:
+          temperature: !lambda "return temperature;"
+          beeper: false
