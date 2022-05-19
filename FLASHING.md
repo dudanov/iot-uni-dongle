@@ -5,45 +5,31 @@
 You get the ready-made stick from me with the pre-installed [ESPHome](https://esphome.io) firmware compiled with the following YAML config:
 
 ```yaml
-esphome:
-  name: iot-uni-dongle
-  platform: ESP8266
-  board: esp12e
+substitutions:
+  node_name: iot-uni-dongle
 
-wifi:
-  ap:
-    ssid: "iot-uni-dongle"
-    password: "12345678"
-
-captive_portal:
-
-ota:
+packages:
+  remote_package: github://dudanov/iot-uni-dongle/esphome/iot-uni-dongle.yaml
 ```
 
 This means that when the stick is powered on, it will works in the access point mode with the network name `iot-uni-dongle` and a simple password `12345678`.
 
 By connecting to this network from your smartphone, you can go to the [captive portal](https://esphome.io/components/captive_portal.html) and enter the parameters of your home Wi-Fi network. I needed to reboot the stick in order for it to connect to my network.
 
-To properly update your firmware based on your configuration using OTA for the first time, you will need to add the current `iot-uni-dongle.local` address to the `wifi` component's configuration using the optional `use_address` string as in the following example. Subsequent firmware updates via OTA must be performed without this option. Read more [here](https://esphome.io/components/esphome.html#changing-esphome-node-name).
+To properly update your firmware based on your configuration using OTA for the first time, you will need set node name to `iot-uni-dongle` and run `$esphome rename your-config.yaml new-node-name`. Read more [here](https://esphome.io/components/esphome.html#changing-esphome-node-name).
 
 ```yaml
-esphome:
-  name: my-node-name
-  platform: ESP8266
-  board: esp12e
+substitutions:
+  node_name: iot-uni-dongle
 
 wifi:
-  ssid: "mySSID"
-  password: "myPASSWORD"
-  # comment next line after first successful update
-  use_address: iot-uni-dongle.local
-  ap:
-    ssid: "fallbackSSID"
-    password: "fallbackPASSWORD"
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
 
-captive_portal:
+packages:
+  remote_package: github://dudanov/iot-uni-dongle/esphome/iot-uni-dongle.yaml
 
-ota:
+# continue your config...
 ```
 
 Thus, you do not need to resort to using the programmer. Congratulations! The migration is complete and you are completely independent of my initial configuration!

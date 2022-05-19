@@ -18,18 +18,18 @@ packages:
     refresh: 0d
     files: [
       # Main dongle package
-      esphome/iot-uni-dongle.yml,
+      esphome/iot-uni-dongle.yaml,
       # Electrolux EACS. Select your model HERE.
-      esphome/climate/midea/electrolux.yml,
+      esphome/climate/midea/electrolux.yaml,
       # "Beeper feedback" switch
-      esphome/climate/midea/common/beeper.yml,
+      esphome/climate/midea/common/beeper.yaml,
       # "Display toggle" button. Works only via IR transmitter for Electrolux EACS.
-      esphome/climate/midea/common/display.yml,
+      esphome/climate/midea/common/display.yaml,
       # "FollowMe" capability via HomeAssistant service.
-      esphome/climate/midea/common/follow_me/service.yml,
+      esphome/climate/midea/common/follow_me/service.yaml,
       # "FollowMe" capability via HomeAssistant sensor.
       # Sensor entity name setting up via ${follow_me_sensor} substitution.
-      esphome/climate/midea/common/follow_me/sensor.yml,
+      esphome/climate/midea/common/follow_me/sensor.yaml,
     ]
 
 # Uncomment for use button as AC power control
