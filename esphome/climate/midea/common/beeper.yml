@@ -1,7 +1,7 @@
 # "Beeper feedback" switch
 switch:
   - platform: template
-    name: ${midea_name} Beeper
+    name: ${climate_name} Beeper
     id: midea_beeper
     icon: mdi:volume-source
     restore_state: true
