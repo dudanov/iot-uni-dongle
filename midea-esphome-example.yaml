@@ -19,6 +19,10 @@ packages:
     files: [
       # Main dongle package
       esphome/iot-uni-dongle.yaml,
+      # TSOP
+      esphome/remote/tsop.yaml,
+      # IR LED
+      #esphome/remote/led.yaml,
       # Electrolux EACS. Select your model HERE.
       esphome/climate/midea/electrolux.yaml,
       # "Beeper feedback" switch

@@ -1,0 +1,4 @@
+# IR LED schematic
+remote_transmitter:
+  pin: 13
+  carrier_duty_percent: 50%
