@@ -1,3 +1,8 @@
+esphome:
+  project:
+    name: "dudanov.electrolux-ac"
+    version: "1.0.0"
+
 substitutions:
   node_name: cabinet-ac
   climate_name: Cabinet Climate
