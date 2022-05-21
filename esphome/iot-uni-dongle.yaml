@@ -1,4 +1,7 @@
 # Default iot-uni-dongle config
+substitutions:
+  node_name: iot-uni-dongle
+
 esphome:
   name: ${node_name}
   platformio_options:
