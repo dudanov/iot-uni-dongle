@@ -1,16 +1,15 @@
-esphome:
-  project:
-    name: "dudanov.electrolux-ac"
-    version: "1.0.0"
-
 substitutions:
-  node_name: cabinet-ac
+  name: cabinet-ac
   climate_name: Cabinet Climate
   follow_me_sensor: sensor.bedroom_temperature
 
-wifi:
-  ssid: !secret wifi_ssid
-  password: !secret wifi_password
+esphome:
+  project:
+    name: "dudanov.electrolux-ac-control"
+    version: "1.0"
+
+dashboard_import:
+  package_import_url: github://dudanov/iot-uni-dongle/electrolux-ac-esp8266.yaml
 
 packages:
   remote_package:

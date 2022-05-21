@@ -1,9 +1,9 @@
 # Default iot-uni-dongle config
 substitutions:
-  node_name: iot-uni-dongle
+  name: iot-uni-dongle
 
 esphome:
-  name: ${node_name}
+  name: ${name}
   platformio_options:
     upload_speed: 2000000
 
