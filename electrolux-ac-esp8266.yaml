@@ -19,7 +19,7 @@ packages:
       # Main dongle package
       esphome/hardware/iot-uni-dongle.yaml,
       # Status LED on ESP-12F module
-      esphome/hardware/status-led.yaml
+      esphome/hardware/status-led.yaml,
       # TSOP
       esphome/hardware/remote/tsop.yaml,
       # IR LED
