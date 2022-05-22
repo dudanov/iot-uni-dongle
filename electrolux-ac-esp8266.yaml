@@ -18,6 +18,14 @@ packages:
     files: [
       # Main dongle package
       esphome/hardware/iot-uni-dongle.yaml,
+      # Restart button
+      esphome/hardware/restart.yaml,
+      # Safe Mode button
+      esphome/hardware/safe-mode.yaml,
+      # Shutdown button
+      esphome/hardware/shutdown.yaml,
+      # Uptime text sensor
+      esphome/hardware/uptime.yaml,
       # WiFi Signal RSSI Sensor
       esphome/hardware/rssi.yaml,
       # Status LED on ESP-12F module

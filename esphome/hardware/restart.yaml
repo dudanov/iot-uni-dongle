@@ -1,0 +1,4 @@
+# Restart button
+button:
+  - platform: restart
+    name: ${friendly_name} Restart
