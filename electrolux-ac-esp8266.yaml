@@ -24,8 +24,12 @@ packages:
       #esphome/hardware/remote/led.yaml,
       # Electrolux EACS. Select your model HERE.
       esphome/climate/midea/electrolux.yaml,
-      # "Power toggle" on hardware button click. (Not working yet. Support will be in next ESPHome release 2022.6)
-      #esphome/climate/midea/common/button.yaml,
+
+      # "Flash" button. Run `button_click` script on click.
+      #esphome/hardware/button.yaml,
+      # Toggles power on button click. (Not working yet. Support will be in next ESPHome release 2022.6)
+      #esphome/climate/midea/common/button_action/power.yaml,
+
       # "Beeper feedback" switch
       esphome/climate/midea/common/beeper.yaml,
       # "Display toggle" button. Works only via IR transmitter for Electrolux EACS.

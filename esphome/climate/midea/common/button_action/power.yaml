@@ -1,6 +1,4 @@
-# "Swing step" button
-<<: !include ../hardware/button.yaml
-
+# "Power toggle" script
 script:
   - id: on_button_click
     then:
