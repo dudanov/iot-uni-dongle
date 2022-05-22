@@ -1,0 +1,7 @@
+# "Swing step" button
+<<: !include ../hardware/button.yaml
+
+script:
+  - id: on_button_click
+    then:
+      midea.power_toggle:

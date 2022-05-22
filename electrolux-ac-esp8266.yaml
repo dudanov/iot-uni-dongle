@@ -17,36 +17,24 @@ packages:
     refresh: 0d
     files: [
       # Main dongle package
-      esphome/iot-uni-dongle.yaml,
+      esphome/hardware/iot-uni-dongle.yaml,
       # TSOP
-      esphome/remote/tsop.yaml,
+      esphome/hardware/remote/tsop.yaml,
       # IR LED
-      #esphome/remote/led.yaml,
+      #esphome/hardware/remote/led.yaml,
       # Electrolux EACS. Select your model HERE.
       esphome/climate/midea/electrolux.yaml,
+      # "Power toggle" on hardware button click.
+      esphome/climate/midea/common/button.yaml,
       # "Beeper feedback" switch
       esphome/climate/midea/common/beeper.yaml,
       # "Display toggle" button. Works only via IR transmitter for Electrolux EACS.
       esphome/climate/midea/common/display.yaml,
+      # "Swing step" button. Works only via IR transmitter.
+      esphome/climate/midea/common/swing.yaml,
       # "FollowMe" capability via HomeAssistant service.
       esphome/climate/midea/common/follow_me/service.yaml,
       # "FollowMe" capability via HomeAssistant sensor.
       # Sensor entity name setting up via ${follow_me_sensor} substitution.
       esphome/climate/midea/common/follow_me/sensor.yaml,
     ]
-
-# Uncomment for use button as AC power control
-#binary_sensor:
-#  - platform: gpio
-#    id: flash_button
-#    pin:
-#      number: GPIO0
-#      inverted: true
-#    filters:
-#      - delayed_on_off: 50ms
-#    on_click:
-#        lambda: |-
-#            if (id(midea_climate).mode == CLIMATE_MODE_OFF)
-#              id(midea_climate).do_power_on();
-#            else
-#              id(midea_climate).do_power_off();

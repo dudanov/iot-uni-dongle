@@ -1,0 +1,9 @@
+# iot-uni-dongle onboard button
+binary_sensor:
+  - platform: gpio
+    id: dongle_button
+    pin:
+      number: 0
+      inverted: true
+    on_click:
+      script.execute: on_button_click

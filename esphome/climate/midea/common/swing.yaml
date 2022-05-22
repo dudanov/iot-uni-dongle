@@ -1,0 +1,8 @@
+# "Swing step" button
+button:
+  - platform: template
+    name: ${climate_name} Swing Step
+    id: midea_swing_step
+    icon: mdi:tailwind
+    on_press:
+      midea_ac.swing_step:
