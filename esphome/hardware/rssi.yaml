@@ -1,0 +1,5 @@
+# WiFi Signal Sensor
+sensor:
+  - platform: wifi_signal
+    name: ${friendly_name} RSSI
+    update_interval: 60s

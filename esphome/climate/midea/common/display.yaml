@@ -1,7 +1,7 @@
 # "Display toggle" button
 button:
   - platform: template
-    name: ${climate_name} Display Toggle
+    name: ${friendly_name} Display Toggle
     id: midea_display_toggle
     icon: mdi:theme-light-dark
     on_press:

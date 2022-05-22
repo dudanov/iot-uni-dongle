@@ -1,6 +1,6 @@
 substitutions:
   name: cabinet-ac
-  climate_name: Cabinet Climate
+  friendly_name: Cabinet Climate
   follow_me_sensor: sensor.bedroom_temperature
 
 esphome:
@@ -18,6 +18,8 @@ packages:
     files: [
       # Main dongle package
       esphome/hardware/iot-uni-dongle.yaml,
+      # WiFi Signal RSSI Sensor
+      esphome/hardware/rssi.yaml,
       # Status LED on ESP-12F module
       esphome/hardware/status-led.yaml,
       # TSOP
