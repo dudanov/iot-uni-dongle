@@ -1,6 +1,7 @@
 # Electrolux EACS/I-xxHAT
 climate:
   - platform: midea
+    icon: mdi:air-conditioner
     name: ${friendly_name}
     id: midea_climate
     autoconf: false
