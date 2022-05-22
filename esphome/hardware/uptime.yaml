@@ -13,16 +13,26 @@ sensor:
         - text_sensor.template.publish:
             id: uptime_human
             state: !lambda |-
-              int seconds = lround(id(uptime_sensor).raw_state);
-              int days = seconds / (24 * 3600);
+              std::string result;
+              unsigned seconds = lround(id(uptime_sensor).raw_state);
+              unsigned days = seconds / (24 * 3600);
               seconds = seconds % (24 * 3600);
-              int hours = seconds / 3600;
+              if (days != 0) {
+                result += to_string(days);
+                result += "d ";
+              }
+              unsigned hours = seconds / 3600;
               seconds = seconds % 3600;
-              int minutes = seconds /  60;
+              if (hours != 0) {
+                result += to_string(hours);
+                result += "h ";
+              }
+              unsigned minutes = seconds / 60;
               seconds = seconds % 60;
-              return (
-                (days ? to_string(days) + "d " : "") +
-                (hours ? to_string(hours) + "h " : "") +
-                (minutes ? to_string(minutes) + "m " : "") +
-                (to_string(seconds) + "s")
-              ).c_str();
+              if (minutes != 0) {
+                result += to_string(minutes);
+                result += "m ";
+              }
+              result += to_string(seconds);
+              result += 's';
+              return result;
