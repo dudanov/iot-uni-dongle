@@ -1,4 +1,4 @@
 # TSOP schematic
 remote_transmitter:
-  pin: 13
+  pin: GPIO13
   carrier_duty_percent: 100%

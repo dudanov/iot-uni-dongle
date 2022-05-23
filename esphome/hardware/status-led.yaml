@@ -3,5 +3,5 @@ light:
   - platform: status_led
     id: dongle_led
     pin:
-      number: 2
+      number: GPIO2
       inverted: true
