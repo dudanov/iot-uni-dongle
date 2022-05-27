@@ -5,11 +5,8 @@
 You get the ready-made stick from me with the pre-installed [ESPHome](https://esphome.io) firmware compiled with the following YAML config:
 
 ```yaml
-substitutions:
-  node_name: iot-uni-dongle
-
 packages:
-  remote_package: github://dudanov/iot-uni-dongle/esphome/iot-uni-dongle.yaml
+  dongle: github://dudanov/iot-uni-dongle/esphome/hardware/iot-uni-dongle.yaml
 ```
 
 This means that when the stick is powered on, it will works in the access point mode with the network name `iot-uni-dongle` and a simple password `12345678`.
@@ -27,9 +24,9 @@ wifi:
   password: !secret wifi_password
 
 packages:
-  remote_package: github://dudanov/iot-uni-dongle/esphome/iot-uni-dongle.yaml
+  dongle: github://dudanov/iot-uni-dongle/esphome/hardware/iot-uni-dongle.yaml
 
-# continue your config...
+# following is your config...
 ```
 
 Thus, you do not need to resort to using the programmer. Congratulations! The migration is complete and you are completely independent of my initial configuration!
