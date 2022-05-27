@@ -17,7 +17,7 @@ To properly update your firmware based on your configuration using OTA for the f
 
 ```yaml
 substitutions:
-  node_name: iot-uni-dongle
+  name: iot-uni-dongle
 
 wifi:
   ssid: !secret wifi_ssid
