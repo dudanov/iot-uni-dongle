@@ -13,15 +13,17 @@ This means that when the stick is powered on, it will works in the access point 
 
 By connecting to this network from your smartphone, you can go to the [captive portal](https://esphome.io/components/captive_portal.html) and enter the parameters of your home Wi-Fi network. I needed to reboot the stick in order for it to connect to my network.
 
-To properly update your firmware based on your configuration using OTA for the first time, you will need set node name to `iot-uni-dongle` and run `$esphome rename your-config.yaml new-node-name`. Read more [here](https://esphome.io/components/esphome.html#changing-esphome-node-name).
+To properly update your firmware based on your configuration using OTA for the first time, you will need to add the current `iot-uni-dongle.local` address to the `wifi` component's configuration using the optional `use_address` string as in the following example. Subsequent firmware updates via OTA must be performed without this option. Read more [here](https://esphome.io/components/esphome.html#changing-esphome-node-name).
 
 ```yaml
 substitutions:
-  name: iot-uni-dongle
+  name: your_node_name
 
 wifi:
   ssid: !secret wifi_ssid
   password: !secret wifi_password
+  # Must be used once. It is necessary to comment out after the first firmware update.
+  use_address: iot-uni-dongle.local
 
 packages:
   dongle: github://dudanov/iot-uni-dongle/esphome/hardware/iot-uni-dongle.yaml
