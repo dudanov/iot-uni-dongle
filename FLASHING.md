@@ -17,7 +17,8 @@ To properly update your firmware based on your configuration using OTA for the f
 
 ```yaml
 substitutions:
-  name: your_node_name
+  name: my-esphome-device
+  friendly_name: My ESPHome Device
 
 wifi:
   ssid: !secret wifi_ssid
@@ -26,13 +27,13 @@ wifi:
   use_address: iot-uni-dongle.local
 
 packages:
-  dongle: github://dudanov/iot-uni-dongle/esphome/hardware/iot-uni-dongle.yaml
+  default: github://dudanov/esphome-packages/hardware/iot-uni-dongle/device.yaml
 
 # following is your config...
 ```
 
 Thus, you do not need to resort to using the programmer. Congratulations! The migration is complete and you are completely independent of my initial configuration!
-[Here](midea-esphome-example.yaml) you can view example YAML config for Midea-like ACs.
+[Here](https://github.com/dudanov/esphome-packages/blob/main/electrolux-ac-esp8266.yaml) you can view example YAML config for Midea-like ACs.
 
 ## Using the programmer (universal method)
 
