@@ -1,7 +1,7 @@
 substitutions:
   name: bedroom-ac
   friendly_name: Bedroom Climate
-  follow_me_sensor: sensor.bedroom_temperature
+  #follow_me_sensor: sensor.bedroom_temperature
 
 esphome:
   project:
@@ -16,44 +16,32 @@ wifi:
 
 packages:
   remote_package:
-    url: https://github.com/dudanov/iot-uni-dongle
+    url: https://github.com/dudanov/esphome-packages
     refresh: 0d
     files: [
       # Main dongle package
-      esphome/hardware/iot-uni-dongle.yaml,
-      # Restart button
-      esphome/hardware/restart.yaml,
-      # Safe Mode button
-      esphome/hardware/safe-mode.yaml,
-      # Shutdown button
-      esphome/hardware/shutdown.yaml,
-      # Uptime text sensor
-      esphome/hardware/uptime.yaml,
-      # WiFi Signal RSSI Sensor
-      esphome/hardware/rssi.yaml,
-      # Status LED on ESP-12F module
-      esphome/hardware/status-led.yaml,
-      # TSOP
-      esphome/hardware/remote/tsop.yaml,
-      # IR LED
-      #esphome/hardware/remote/led.yaml,
+      hardware/iot-uni-dongle/device.yaml,
+      # IR remote transmitter (IR- pad connected to TSOP output of controlled device)
+      hardware/iot-uni-dongle/remote/tsop.yaml,
+      # IR remote transmitter (IR LED between IR+ and IR- pads)
+      #hardware/iot-uni-dongle/remote/led.yaml,
       # Electrolux EACS. Select your model HERE.
-      esphome/climate/midea/electrolux.yaml,
+      climate/midea/electrolux.yaml,
 
       # "Flash" button. Run `button_click` script on click.
-      #esphome/hardware/button.yaml,
+      hardware/iot-uni-button/button.yaml,
       # Toggles power on button click. (Not working yet. Support will be in next ESPHome release 2022.6)
-      #esphome/climate/midea/common/button_action/power.yaml,
+      climate/midea/common/button_action/power.yaml,
 
       # "Beeper feedback" switch
-      esphome/climate/midea/common/beeper.yaml,
+      climate/midea/common/beeper.yaml,
       # "Display toggle" button. Works only via IR transmitter for Electrolux EACS.
-      esphome/climate/midea/common/display.yaml,
+      climate/midea/common/display.yaml,
       # "Swing step" button. Works only via IR transmitter.
-      esphome/climate/midea/common/swing.yaml,
+      climate/midea/common/swing.yaml,
       # "FollowMe" capability via HomeAssistant service.
-      esphome/climate/midea/common/follow_me/service.yaml,
+      climate/midea/common/follow_me/service.yaml,
       # "FollowMe" capability via HomeAssistant sensor.
       # Sensor entity name setting up via ${follow_me_sensor} substitution.
-      esphome/climate/midea/common/follow_me/sensor.yaml,
+      #climate/midea/common/follow_me/sensor.yaml,
     ]

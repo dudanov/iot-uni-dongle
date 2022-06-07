@@ -6,7 +6,7 @@ You get the ready-made stick from me with the pre-installed [ESPHome](https://es
 
 ```yaml
 packages:
-  dongle: github://dudanov/iot-uni-dongle/esphome/hardware/iot-uni-dongle.yaml
+  dongle: github://dudanov/esphome-packages/hardware/iot-uni-dongle/minimal.yaml
 ```
 
 This means that when the stick is powered on, it will works in the access point mode with the network name `iot-uni-dongle` and a simple password `12345678`.
