@@ -33,7 +33,7 @@ packages:
 ```
 
 Thus, you do not need to resort to using the programmer. Congratulations! The migration is complete and you are completely independent of my initial configuration!
-[Here](https://github.com/dudanov/esphome-packages/blob/main/electrolux-ac-esp8266.yaml) you can view example YAML config for Midea-like ACs.
+[Here](electrolux-ac-esp8266.yaml) you can view example YAML config for Midea-like ACs.
 
 ## Using the programmer (universal method)
 
