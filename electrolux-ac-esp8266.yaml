@@ -29,7 +29,7 @@ packages:
       climate/midea/electrolux.yaml,
 
       # "Flash" button. Run `button_click` script on click.
-      hardware/iot-uni-button/button.yaml,
+      hardware/iot-uni-dongle/button.yaml,
       # Toggles power on button click. (Not working yet. Support will be in next ESPHome release 2022.6)
       climate/midea/common/button_action/power.yaml,
 
