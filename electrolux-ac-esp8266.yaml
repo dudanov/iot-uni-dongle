@@ -17,6 +17,9 @@ wifi:
   ssid: !secret wifi_ssid
   # Your SSID password. Must be located in 'secrets.yaml' file.
   password: !secret wifi_password
+  # Uncomment on the first firmware update.
+  #use_address: iot-uni-dongle.local
+
 
 esphome:
   project:
