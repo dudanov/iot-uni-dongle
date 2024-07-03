@@ -2,8 +2,6 @@
 
 An project of universal stick for various IOT appliances controlled via UART.
 
-Ready-made are available in [Tindie Shop](https://www.tindie.com/products/dudanov/universal-iot-dongle/).
-
 ![1](images/main.gif)
 
 ## Main goals
@@ -72,9 +70,6 @@ I've written some [tutorial](FLASHING.md). Read it.
 
 *Initially, the stick was developed for [ESPHome](https://esphome.io) and [Home Assistant](https://www.home-assistant.io), but it is possible to write your own firmware for your tasks and needs if you have the appropriate skills.*
 
-> Is it possible to purchase a ready-made stick?
+## Support
 
-*Yes, you can buy it in [Tindie Shop](https://www.tindie.com/products/dudanov/universal-iot-dongle/), write me to my [Telegram](https://t.me/dudanov) or [e-mail](mailto:sergey.dudanov@gmail.com).*
-
-
-If this project was useful to you, you can [buy me](https://paypal.me/dudan0v) a Cup of coffee :)
+If you find this project was useful and want to support me and my work, you can do this by sending me a donation in [TONs](https://ton.org/): `UQCji6LsYAYrJP-Rij7SPjJcL0wkblVDmIkoWVpvP2YydnlA`.
